@@ -12,6 +12,10 @@
   5. [N-gram Language Modeling Tutorial](http://ssli.ee.washington.edu/WS07/notes/ngrams.pdf)
   6. [Big exercise](https://www.slideshare.net/kimdinhsonict/ngram-29611724)
   7. [Edit fomula in mydocument](http://latex.codecogs.com/eqneditor/editor.php)
+  8. [video Ngram 2](https://www.youtube.com/watch?v=2URgnK4fAqg)
+  9. [PP làm mịn Add-one(Laplace)](https://www.youtube.com/watch?v=SsvYOs_d6fA)
+  10. [PP làm mịn Good-turing](https://www.youtube.com/watch?v=YqXAWfE9S4M)
+  11. [Báo cáo tiến độ](https://docs.google.com/spreadsheets/d/1WAQQ08n08BsY5aA_eTvdf4sg5TJTtws0No4fpN0D07E/edit?ts=5c3ea1ba#gid=0)
 ### Applications
   * automated machine translation
   * predict the next most likely word to occur in a sentence
@@ -31,15 +35,15 @@
   1. Unigram
   2. Bigram
   3. Trigram
-### Các Phương pháp làm mịn
+### Smoothings
   1. Chiếc khấu (Discounting)
-    * Add-one:
+  * Add-one (Laplace):
       - ![Tính Ci* với unigram](http://latex.codecogs.com/gif.latex?C_%7Bi%7D%5E*%20%3D%20%28C_%7Bi%7D&plus;1%29%5Cfrac%7BM%7D%7BM%5E%7B%27%7D%7D)  
       - ![Tính Pi* với unigram](http://latex.codecogs.com/gif.latex?P_%7Bi%7D%5E%7B*%7D%3D%5Cfrac%7BC_%7Bi%7D%5E%7B*%7D%7D%7BM%5E%7B%27%7D%7D%3D%5Cfrac%7BC_%7Bi%7D&plus;1%7D%7BM&plus;V%7D)<br>
       - ![Tính Pi* với ngram](http://latex.codecogs.com/gif.latex?P_%7Bi%7D%5E%7B*%7D%28W_%7Bi%7D%7CW_%7Bi-n&plus;1%7D%5E%7Bi-1%7D%29%3D%5Cfrac%7BC%28W_%7Bi-n&plus;1%7D%5E%7Bi%7D%29%7D%7BC%28W_%7Bi-n&plus;1%7D%5E%7Bi-1%7D%29&plus;V%7D)<br>
-    * Writen-Bell
+  * Writen-Bell
       - ![Tính P khi Ci-1=0](http://latex.codecogs.com/gif.latex?P%28W_%7Bi%7D%7CW_%7Bi-n&plus;1%7D%5E%7Bi-1%7D%29%3D%5Cfrac%7BT%28W_%7Bi&plus;n-1%7D%5E%7Bi%7D%29&plus;1%7D%7BZ%28W_%7Bi&plus;n-1%7D%5E%7Bi%7D%29%5BC%28W_%7Bi&plus;n-1%7D%5E%7Bi-1%7D%29&plus;T%28W_%7Bi&plus;n-1%7D%5E%7Bi%7D%29%5D%7D)
       - ![Tính P khi ci-1>0](http://latex.codecogs.com/gif.latex?P%28W_%7Bi%7D%7CW_%7Bi-n&plus;1%7D%5E%7Bi-1%7D%29%3D%5Cfrac%7BC%28W_%7Bi&plus;n-1%7D%5E%7Bi%7D%29&plus;1%7D%7BC%28W_%7Bi&plus;n-1%7D%5E%7Bi-1%7D%29&plus;T%28W_%7Bi&plus;n-1%7D%5E%7Bi%7D%29%7D)
-    * Good - turing
+  * Good - turing
   2. Truy hồi (Back-off)
   3. Nội suy (Interpolation)
