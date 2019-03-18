@@ -4,6 +4,9 @@
   **[Documentation](#documentation)**<br>
   **[Applications](#applications)**<br>
   **[Reasions](#reasions)**<br>
+  **[Formula](#fomula)**<br>
+  **[N-Grams common](#n-grams)**<br>
+  **[Smoothings](#smoothing)**<br>
 ### Documentation
   1. [N-gram Language Models](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
   2. [Modeling Natural Language with N-Gram Models](https://sookocheff.com/post/nlp/n-gram-modeling/)
@@ -25,13 +28,13 @@
 ### Reasions
   * identify words in noisy, ambiguous input, like speech recognition or handwriting recognition
   * cho biết phân bố xác xuất trên các tập văn bản là bao nhiêu
-### Công Thức Tính Xác Suất
+### Fomula
   1. Công thức Bayes: <br>
   * ![Công thức Bayes](http://latex.codecogs.com/gif.latex?P%28AB%29%3DP%28B%7CA%29*P%28A%29)
   * ![Công thức Bayes cho chuỗi W](http://latex.codecogs.com/gif.latex?P%28W_%7B1%7DW_%7B2%7D..W_%7Bm%7D%29%3DP%28W_%7B1%7D%29*P%28W_%7B2%7D%7CW_1%29*P%28W_%7B3%7D%7CW_%7B1%7D%5E%7B2%7D%29*...*P%28W_m%7CW_%7B1%7D%5E%7Bm-1%7D%29)
   2. Xấp xỉ Markov:<br>
   * ![Công thức Markov](http://latex.codecogs.com/gif.latex?P%28W_%7B1%7DW_%7B2%7D..W%7Bm%7D%29%20%3D%20P%28W_%7B1%7D%29*P%28W_%7B2%7D%7CW_%7B1%7D%29*P%28%7BW_%7B3%7D%7CW_%7B1%7D%5E2%7D%29..*P%28W_%7Bm%7D%7CW_%7Bm-n%7D%5E%7Bm-1%7D%29)
-### Các N-Gram phổ biến
+### N-Grams
   1. Unigram
   2. Bigram
   3. Trigram
