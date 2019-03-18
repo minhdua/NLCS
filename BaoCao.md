@@ -1,6 +1,7 @@
 # Tài Liệu Báo Cáo
 ## Giới thiệu vấn đề
   1. Đặt vấn đề
+  [tài liệu đặt tả](https://docs.google.com/document/d/1ocwOlwGHonhTMeMczf8btRLfRV8x3YPGn6L3lNky77s/edit)
   2. Mục tiêu
   3. Cấu trúc niên luận
   
